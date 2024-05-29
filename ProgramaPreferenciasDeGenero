@@ -1,0 +1,48 @@
+/******************************************************************************
+Autor:       Mariana Quirama cano
+fecha:       2024-05-29
+Descripción:Ejercico estructura de decición múltiple
+se desea vun programa que ayude con las preferencias de género 
+-Si es hombre menor de edad sus preferencias son:
+  Figuras de acción. caricaturas, series tv
+-Si es hombre mayor de edad sus preferencias son:
+   cine, picnic y filantropía
+ -Si es mujer menor de edad sus preferencias son:
+   muñecas, maquillaje, serie tv
+ -Si es una mujer mayor de edad sus preferencias son:
+   maquillaje,series tv, cine, filantropía
+*******************************************************************************/
+
+using System;
+class  Program {
+  static void Main() {
+   
+    Console.Write("escribir hombre o mujer: ");
+    string genero =(Console.ReadLine());
+
+    Console.Write("escribir edad en números: ");
+    int edad = Int32.Parse(Console.ReadLine());
+   
+    // 3 Validar opción elegida
+    if(genero == "hombre"){
+        if ( edad < 18 )
+        Console.WriteLine("sus preferencias son: Figuras de acción. caricaturas, series tv" );
+    }
+    
+    if(genero == "hombre" ){
+        if ( edad >= 18 )
+        Console.WriteLine("sus preferencias son: cine, picnic y filantropía " );
+    }
+    
+    if(genero == "mujer" ){
+        if ( edad < 18 )
+        Console.WriteLine("sus preferencias son: muñecas, maquillaje, serie tv ");
+    }
+    
+    if(genero == "mujer" ){
+        if ( edad >= 18 )
+       Console.WriteLine("sua preferencias son:  maquillaje,series tv, cine, filantropía " );    
+    }
+    
+    }
+  }  

@@ -1,0 +1,60 @@
+/******************************************************************************
+Autor: Mariana Quirama Cano
+Fecha: 2024-06-05
+Desccripcion
+Descripción: El Rey León: 
+    Las manadas de la Roca del Rey están compitiendo 
+    por el control de las Tierras del Reino. 
+    Pide al usuario la fuerza de al menos 5 
+    clanes diferentes y usa estructuras "si" 
+    para determinar clasificación de fuerza.
+*******************************************************************************/
+using System;
+class HelloWorld {
+  static void Main() {
+    // variables
+    int fuerza = 0;
+    
+    
+    // estructura loop
+    for (int i = 0; i <5; i++) {
+      
+        // solicitud de fuerza
+        Console.WriteLine("cual es tu fuerza: ");
+        fuerza = Int32.Parse(Console.ReadLine());
+        
+        // validación y clasificación
+        if( fuerza <=20 ){
+            if(fuerza >=0){    
+                Console.WriteLine("eres una cebra muy debil");
+            }
+        }
+        if( fuerza >=21 ){
+            if(fuerza <=30 ){   
+                Console.WriteLine("eres una  jirafa muy debil");
+            }   
+        }
+    
+        if( fuerza  >=31 ){
+            if(fuerza <=40 ){  
+                Console.WriteLine("eres un rinoceronte  fuerte");
+            }
+        }
+    
+        if( fuerza  >=41 ){
+            if(fuerza <=50 ){  
+                Console.WriteLine("eres una hiena fuerte");
+            }
+        }
+    
+    
+        if( fuerza  >=51 ){
+            if(fuerza <=100){  
+                Console.WriteLine("eres un leon muy fuerte");
+     
+            }
+        }  
+    }
+    //final
+  }
+}
